@@ -43,10 +43,10 @@ const DetailedSentimentAnalysis = ({ data }: DetailedSentimentAnalysisProps) => 
   }))
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Sentiment Score Distribution */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Sentiment Score Distribution</h2>
+      <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mb-4">
+        <h2 className="text-lg font-bold text-gray-800 mb-4 font-sans">Sentiment Score Distribution</h2>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={sentimentData}>
@@ -62,8 +62,8 @@ const DetailedSentimentAnalysis = ({ data }: DetailedSentimentAnalysisProps) => 
       </div>
 
       {/* Sentiment vs Engagement Correlation */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Sentiment vs Engagement Correlation</h2>
+      <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mb-4">
+        <h2 className="text-lg font-bold text-gray-800 mb-4 font-sans">Sentiment vs Engagement Correlation</h2>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart>

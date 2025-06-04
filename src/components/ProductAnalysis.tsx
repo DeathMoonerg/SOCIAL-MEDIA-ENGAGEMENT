@@ -41,8 +41,8 @@ const ProductAnalysis = ({ data }: ProductAnalysisProps) => {
     .slice(0, 10)
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow">
-      <h2 className="text-xl font-semibold mb-4">Top 10 Products by Engagement</h2>
+    <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mb-4">
+      <h2 className="text-lg font-bold text-gray-800 mb-4 font-sans">Top 10 Products by Engagement</h2>
       <div className="h-96">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={productData}>

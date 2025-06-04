@@ -43,10 +43,10 @@ const GrowthAnalysis = ({ data }: GrowthAnalysisProps) => {
   }))
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Engagement Growth Distribution */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Engagement Growth Distribution</h2>
+      <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mb-4">
+        <h2 className="text-lg font-bold text-gray-800 mb-4 font-sans">Engagement Growth Distribution</h2>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={growthData}>
@@ -62,8 +62,8 @@ const GrowthAnalysis = ({ data }: GrowthAnalysisProps) => {
       </div>
 
       {/* Buzz Change vs Engagement Growth Correlation */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold mb-4">Buzz Change vs Engagement Growth</h2>
+      <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mb-4">
+        <h2 className="text-lg font-bold text-gray-800 mb-4 font-sans">Buzz Change vs Engagement Growth</h2>
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <ScatterChart>
